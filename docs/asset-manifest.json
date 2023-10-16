@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/scratchblock/static/css/main.706f125d.css",
-    "main.js": "/scratchblock/static/js/main.c1a35abe.js",
+    "main.js": "/scratchblock/static/js/main.5e18fd6c.js",
     "index.html": "/scratchblock/index.html",
     "main.706f125d.css.map": "/scratchblock/static/css/main.706f125d.css.map",
-    "main.c1a35abe.js.map": "/scratchblock/static/js/main.c1a35abe.js.map"
+    "main.5e18fd6c.js.map": "/scratchblock/static/js/main.5e18fd6c.js.map"
   },
   "entrypoints": [
     "static/css/main.706f125d.css",
-    "static/js/main.c1a35abe.js"
+    "static/js/main.5e18fd6c.js"
   ]
 }

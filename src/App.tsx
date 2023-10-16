@@ -80,8 +80,9 @@ function App() {
   useEffect(() => {
     setSource(`int main(int arg) {
     int var = 10;
-    var += 52;
-    print(var);
+    var = 52;
+    var = 5;
+    printf("hi\n");
   }`);
 
   }, [])
@@ -187,7 +188,7 @@ function App() {
             <div className="h-20 flex items-center gap-4">
             <button type="button" onClick={compile} style={{backgroundColor: "#8FBCBB"}} className="text-black text-sm leading-6 font-medium py-2 px-3 rounded-lg">{"<> Compile"}</button>
             <button type="button" onClick={stepVM} style={{backgroundColor: "#2E3440"}} className="text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg">{"> Step"}</button>
-            <button type="button" onClick={share} style={{backgroundColor: "#2E3440"}} className="text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg">Share</button>
+            {/* <button type="button" onClick={share} style={{backgroundColor: "#2E3440"}} className="text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg">Share</button> */}
             </div>
             <div className="flex flex-1 gap-8">
             <div className="outputScreen flex flex-col">
