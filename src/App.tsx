@@ -82,8 +82,11 @@ function App() {
     int var = 10;
     var = 52;
     var = 5;
-    printf("hi\n");
+    printf("hi");
   }`);
+    setTimeout(()=>{
+    setBlockMode(true);
+    },100);
 
   }, [])
   const setBlockProperty = useCallback(
@@ -114,7 +117,7 @@ function App() {
         }
         path.shift();
       }
-      setBlocks(newBlocks);
+      setBlocks(newBlocks.slice(0));
     },
     [blocks]
   );
@@ -130,7 +133,7 @@ function App() {
         }
         path.shift();
       }
-      setBlocks(newBlocks);
+      setBlocks(newBlocks.slice(0));
     },
     [blocks]
   );
