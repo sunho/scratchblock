@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+
+/* App Interface */
+.App {
+  text-align: center;
+  font-family: 'Gemunu Libre', sans-serif;
+}
+
+body {
+  background-color: #0E1525;
+    /* background-image: url('./images/vaporwave_background.jpeg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+} 
+
+/* Class */
+/* Section 1: HEADER */
+.nav{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+
+}
+
+.icon {
+  display: flexbox;
+
+}
+
+/* Section 2: BODY  */
+/* Component: Sidebar */
+.framebox {
+  display: block;
+  margin: auto;
+  margin-top: 1%;
+  width: 40vw;
+  height: 87.5vh;
+  background-color: hsla(0, 40%, 98%, 0.05);
+  border-radius: 10px;
+}
+
+.outputScreen {
+  width: 35vw;
+}
+
+.sidebar-container{
+  margin: auto;
+
+  border-radius: 10px;
+}
+
+.sidebar-container2{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  border-radius: 10px;
+
+}
+
+
+.BlockList {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+/* Component: Input */
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin : auto;
+  width: 40vw;
+  
+}
+.inputBox {
+  display: inline-block;
+  width: 100%;
+  border: 10px #2E3440;
+  border-style: groove;
+}
+
+/* Component: Output */
+.output {
+  display: inline-block;
+  height: 25vh;
+  width: 25vw;
+  position: fixed;
+  right: 10px;
+  margin: 5px;
+  border: 10px #2E3440;
+  border-style: groove;
+  background-color: #648997;
+}
+
+/* Section 3: Code Blocks */
+.NestBlockPlaceholder {
+  padding: 1px;
+  border-radius: 10px 10px 10px 0; 
+  display: inline-flex;
+  align-items: center;
+}
+
+.ListHolder {
+  background-color: #1C2333;
+  padding: 6px 6px;
+  border-radius: 6px;
+  margin: 0px 5px;
+
+  display: inline-block;
+  align-items: center;
+  
+}
+
+.ListHolder > div {
+  margin: 0 5px;
+}
+
+.side {
+  flex-direction: column;
+}
+
+.TextHolder {
+  background-color: #bfdbfe;
+  padding: 2px 2px;
+  margin: 0px 2px;
+  width: 60px;
+  color: black;
+  text-align: center;
+  border-radius: 4px;
+
+  display: inline-block;  
+  outline: none;
+  border:none;
+  box-shadow: none;
+}
+
+.TextHolder:focus {
+  outline: none;
+  border:none;
+}
+
+.Container {
+  display: block;
+  margin: 0 auto;
+  width: 80vw;
+}
+
+.NestBlock {
+  display: inline-block;
+  flex-direction: column;
+  align-content: left;
+  justify-content: center;
+  margin: 3px;
+  color: white;
+}
+
+.NestBlockBody {
+  display: flex;
+  min-height: 40px;
+}
+
+.NestBlockBodyBar {
+  width: 20px;
+  display: block;
+}
+
+.NestBlockBodyBody {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.NestBlockEnd {
+  border-radius: 0 6px 6px 6px;
+  height: 30px;
+  
+}
+
+.BlockActive {
+  background-color: green;
+  padding: 10px;
+}
+
+.sidebarrr {
+  display: flex;
+  inset: 2.5% 72.5% 2.5% 0.5% ;
+  background-color: hsla(0, 40%, 98%, 0.05); 
+  position: fixed;
+  border-style: hidden;
+  border-radius: 10px;
+
+}
+
+.Sidebar-none {
+  display: flex;
+  inset: 0;
+  background-color: transparent;
+  position: fixed;
+
+}
+
+.menu-icon {
+  display: flex;
+}
+
+.icons {
+  height: 5%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar-icon {
+  margin-top: 22.5px;
+  height: 6%;
+}
+
+#exit-icon {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.top-bar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.compile-button {
+  font-size: 25px;
+  display: flexbox;
+  background-color: #0653A6;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-left: 100%;
+  margin-top: -10%;
+  color: white;
+  width: 20vh;
+  height: 5vh;
+  border-radius: 10px;
+  padding-bottom: 2px;
+  border: 1px #0E1525;
+  border-style: groove;
+  cursor: pointer;
+
+}
+
+.ExprHolder {
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #648997;
+}
+
+.vs-code {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes RubberBand {
+  
+}
